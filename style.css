@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body{
+    background-color: rgb(60, 60, 60);
+    display: flex;
+}
+.central{
+    margin: auto;
+    width: 40%;
+    height: 60%;
+    background-color: rgb(106, 255, 175);
+    border-radius: 10%;
+   
+    box-shadow: 2px 2px 5px rgb(106, 255, 175);
+
+    display: flex;
+    flex-direction: column;
+    justify-content:  start;
+    align-items: center;
+    padding-top: 20px;
+
+}
+#input-container{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#input-container input{
+    border:none;
+    border-radius:5%;
+    padding: 5px;
+}
+#input-container button{
+    border: 2px solid rgb(0, 199, 93);
+    border-radius: 10%;
+    padding: 5px;
+    background-color: rgb(172, 249, 208);
+}
+#todo-itens{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+#todo-itens input{
+    width: 20px;
+    height: 20px;
+}
+#todo-itens li{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+#todo-itens label{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.check:checked + label{
+    text-decoration: line-through;
+    color: rgb(165, 165, 165);
+    font-style: italic;
+}
